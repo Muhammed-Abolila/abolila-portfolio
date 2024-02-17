@@ -1,0 +1,103 @@
+// Start Skills Section
+.skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .skills-content {
+    background-color: var(--whiteColor);
+    border: 1px solid var(--grayColor);
+    border-radius: 10px;
+    overflow: hidden;
+    .one-skill {
+      padding: 40px 0px;
+      border-left: 1px solid var(--grayColor);
+      text-align: center;
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 15px 20px;
+        position: relative;
+        text-transform: capitalize;
+        &:after {
+          content: "";
+          height: 1px;
+          width: 60%;
+          background-color: var(--grayColor);
+          position: absolute;
+          top: 100%;
+          left: 20%;
+          right: 20%;
+        }
+      }
+      .one-skill-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        div {
+          width: 50%;
+          padding: 10px;
+          font-size: 2.9rem;
+        }
+      }
+    }
+    .personal {
+      .one-skill-content {
+        display: block;
+        text-align: start;
+        li {
+          padding-top: 7px;
+          font-size: 1rem;
+          margin-top: 10px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+// Start Skills Media Query
+@media screen and (max-width: 1200px) {
+  .skills {
+    .skills-content {
+      .personal {
+        .one-skill-content {
+          li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .skills {
+    height: 100%;
+    margin: 50px 0px;
+    .skills-content {
+      margin: 20px 0px;
+      .one-skill {
+        padding: 10px 0px;
+        border-top: 1px solid var(--grayColor);
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .skills {
+    .skills-content {
+      .personal {
+        .one-skill-content {
+          li {
+            margin-left: 10px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Skills Media Query
+// End Skills Section

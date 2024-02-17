@@ -1,0 +1,42 @@
+// Start Top Navbar
+nav {
+  background-color: var(--whiteColor);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  .top-nav-bar {
+    margin: auto;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-icon {
+      font-size: 23px;
+      border: 1px solid var(--grayColor);
+      padding: 3px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .text {
+      display: block;
+      font-size: 18px !important;
+      margin: 0px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: -14px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--primaryColor);
+      }
+    }
+  }
+}
+// End Top Navbar

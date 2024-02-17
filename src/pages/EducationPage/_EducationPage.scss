@@ -1,0 +1,129 @@
+// Start Education Section
+.education {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .education-content {
+    .image {
+      background-image: url("../assets/img/profile/3.jpg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 100%;
+      border: 1px solid var(--grayColor);
+      border-radius: 10px 0px 0px 10px;
+      overflow: hidden;
+      h2 {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        background-color: var(--whiteColor);
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5px;
+      }
+    }
+    .slick-slider {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--whiteColor);
+      border: 1px solid var(--grayColor);
+      border-left: none;
+      border-radius: 0px 10px 10px 0px;
+      .slick-arrow {
+        display: none !important;
+      }
+      .slick-dots {
+        bottom: 10px;
+        li {
+          button {
+            &:before {
+              font-size: 15px;
+              color: var(--primaryColor);
+            }
+          }
+        }
+      }
+      .education-container {
+        padding: 50px 0px;
+        position: relative;
+        text-align: end;
+        overflow: hidden;
+        &:before {
+          content: "";
+          width: 1px;
+          background-color: var(--grayColor);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          right: 50%;
+        }
+        .content {
+          padding: 0px 30px;
+          h3 {
+            font-size: 1.5rem;
+          }
+          .date {
+            margin: 10px 0px;
+          }
+          .brdr {
+            height: 1px;
+            width: 100%;
+            background-color: var(--grayColor);
+            width: 100%;
+            margin-top: 0.8rem;
+            margin-bottom: 1rem;
+          }
+          p {
+            line-height: 25px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+// Start Education Media Query
+@media screen and (max-width: 991px) {
+  .education {
+    height: 100%;
+    margin: 50px 0px;
+    .education-content {
+      margin: 20px 0px;
+      .image {
+        height: 350px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .slick-slider {
+        border: 1px solid var(--grayColor);
+        border-top: none;
+        border-radius: 0px 0px 10px 10px;
+
+        .education-container {
+          padding: 0;
+          &:before {
+            width: 100%;
+            height: 1px;
+            background-color: var(--grayColor);
+            position: absolute;
+            top: 47%;
+            bottom: 47%;
+            left: 0;
+            right: 0;
+          }
+        }
+        .content {
+          padding: 50px 30px !important;
+        }
+      }
+    }
+  }
+}
+// End Education Media Query
+// End Education Section

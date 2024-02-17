@@ -1,0 +1,20 @@
+@import "./Colors";
+@import "../components/utilities/TopNavbar/TopNavbar";
+@import "../components/utilities/BottomNavbar/BottomNavbar";
+@import "../pages/HomePage/HomePage";
+@import "../pages/EducationPage/EducationPage";
+@import "../pages/SkillsPage/SkillsPage";
+@import "../pages/PortfolioPage/PortfolioPage";
+@import "../pages/ExperiencesPage/ExperiencesPage";
+@import "../pages/ContactPage/ContactPage";
+@import "../components/utilities/SocialLinks/SocialLinks";
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../assets/img/bg.jpg");
+    background-attachment: fixed;
+    background-position: 100% 30%;
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}

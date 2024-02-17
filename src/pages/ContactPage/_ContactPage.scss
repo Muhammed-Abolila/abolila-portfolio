@@ -1,0 +1,83 @@
+// Start Contact Me Section
+.contact-me {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    border: 2px dashed var(--grayColor);
+    padding: 20px 10px;
+    .caption {
+      h3,
+      h4 {
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+      p {
+        margin: 20px 0px;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .form {
+    padding-left: 10px;
+    .form-control {
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid #fff;
+      transition: all 0.5s ease-in-out;
+      &:focus {
+        box-shadow: none;
+        border-bottom: 2px solid var(--primaryColor);
+      }
+      &::placeholder {
+        text-transform: uppercase;
+      }
+    }
+    textarea {
+      min-height: 140px;
+      max-height: 140px;
+    }
+    button {
+      border: 1px solid var(--grayColor);
+      background-color: var(--whiteColor);
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: var(--primaryColor);
+        border: 1px solid var(--primaryColor);
+        color: var(--whiteColor);
+      }
+    }
+  }
+}
+// Start Contant Me Media Query
+@media screen and (max-width: 991px) {
+  .contact-me {
+    margin: 50px 0px;
+    height: 100%;
+    .form {
+      padding-left: 0;
+      margin: 20px 0px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .contact-me {
+    margin: 50px 0px;
+    height: 100%;
+    .content {
+      .caption {
+        h3,
+        h4 {
+          font-size: 1.6rem;
+        }
+        p {
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+// End Contant Me Media Query
+// End Contact Me Section
