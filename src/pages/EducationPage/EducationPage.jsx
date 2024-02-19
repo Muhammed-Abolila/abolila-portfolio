@@ -9,7 +9,7 @@ import Slider from "react-slick";
 const EducationPage = () => {
   let settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1

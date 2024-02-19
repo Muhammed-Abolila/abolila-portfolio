@@ -5,7 +5,7 @@ import PortfoliosPage from "./pages/PortfolioPage/PortfoliosPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import ExperiencesPage from "./pages/ExperiencesPage/ExperiencesPage";
 import HomePage from "./pages/HomePage/HomePage";
-import TestimonialsPage from "./pages/TestimonialsPage/TestimonialsPage";
+// import TestimonialsPage from "./pages/TestimonialsPage/TestimonialsPage";
 function App() {
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/skills" element={<SkillsPage/>} />
           <Route path="/portfolio" element={<PortfoliosPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/testimonials" element={<TestimonialsPage />} />
+          {/* <Route path="/testimonials" element={<TestimonialsPage />} /> */}
           <Route path="/experiences" element={<ExperiencesPage />} />
         </Routes>
       </HashRouter>

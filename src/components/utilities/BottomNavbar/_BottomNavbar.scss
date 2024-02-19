@@ -9,8 +9,8 @@
   left: 0;
   right: 0;
   ul {
-    background-color: var(--whiteColor);
-    border: 1px solid var(--grayColor);
+    background-color: var(--firstBgColor);
+    border: 1px solid var(--borderColor);
     border-radius: 5px;
     margin: 0px !important;
     list-style: none;
@@ -34,7 +34,7 @@
         right: -40%;
         border-radius: 5px;
         font-size: 13px;
-        background-color: var(--primaryColor);
+        background-color: var(--borderColor);
         width: 90px;
         text-align: center;
         transition: opacity 0.5s ease-in-out;
@@ -43,13 +43,13 @@
           position: absolute;
           left: 44%;
           top: 50%;
-          background-color: var(--primaryColor);
+          background-color: var(--borderColor);
           padding: 8px;
           rotate: 137deg;
         }
       }
       img {
-        border: 1px solid var(--grayColor);
+        border: 1px solid var(--borderColor);
         border-radius: 10px;
         width: 100%;
         width: 40px;

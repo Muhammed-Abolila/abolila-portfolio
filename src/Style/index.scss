@@ -11,10 +11,11 @@
 @import "../components/utilities/SocialLinks/SocialLinks";
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url("../assets/img/bg.jpg");
-    background-attachment: fixed;
-    background-position: 100% 30%;
-    background-size: cover;
+    background-color: var(--secondBgColor);
+    // background-image: url("../assets/img/bg.jpg");
+    // background-attachment: fixed;
+    // background-position: 100% 30%;
+    // background-size: cover;
 }
 *{
     box-sizing: border-box;

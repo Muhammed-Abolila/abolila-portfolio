@@ -1,12 +1,13 @@
 // Start Top Navbar
 nav {
-  background-color: var(--whiteColor);
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px 0px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
+  background-color: var(--firstBgColor);
+  color:var(--textColor);
+  border-bottom:1px solid var(--borderColor);
   .top-nav-bar {
     margin: auto;
     width: 100%;
@@ -16,7 +17,7 @@ nav {
     align-items: center;
     .nav-icon {
       font-size: 23px;
-      border: 1px solid var(--grayColor);
+      color: var(--borderColor);
       padding: 3px;
       border-radius: 10px;
       cursor: pointer;
@@ -26,6 +27,7 @@ nav {
       font-size: 18px !important;
       margin: 0px;
       position: relative;
+      color:var(--textColor);
       &:before {
         content: "";
         position: absolute;
@@ -34,7 +36,7 @@ nav {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: var(--primaryColor);
+        background-color: var(--borderColor);
       }
     }
   }

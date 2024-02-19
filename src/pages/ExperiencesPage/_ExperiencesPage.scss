@@ -12,7 +12,7 @@
       background-repeat: no-repeat;
       position: relative;
       height: 100%;
-      border: 1px solid var(--grayColor);
+      border: 1px solid var(--borderColor);
       border-radius: 10px 0px 0px 10px;
       overflow: hidden;
       h2 {
@@ -20,7 +20,8 @@
         bottom: -8px;
         left: 0;
         right: 0;
-        background-color: var(--whiteColor);
+        background-color: var(--firstBgColor);
+        color:var(--textColor);
         font-size: 1.5rem;
         text-align: center;
         padding: 5px;
@@ -31,8 +32,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--whiteColor);
-      border: 1px solid var(--grayColor);
+      background-color: var(--firstBgColor);
+      border: 1px solid var(--borderColor);
       border-left: none;
       border-radius: 0px 10px 10px 0px;
       .slick-arrow {
@@ -44,7 +45,7 @@
           button {
             &:before {
               font-size: 15px;
-              color: var(--primaryColor);
+              color: var(--borderColor);
             }
           }
         }
@@ -57,7 +58,7 @@
         &:before {
           content: "";
           width: 1px;
-          background-color: var(--grayColor);
+          background-color: var(--borderColor);
           position: absolute;
           top: 0;
           bottom: 0;
@@ -66,7 +67,9 @@
         }
         .content {
           padding: 0px 30px;
+          color:var(--grayColor);
           h3 {
+            color:var(--textColor);
             font-size: 1.5rem;
           }
           .date {
@@ -75,7 +78,7 @@
           .brdr {
             height: 1px;
             width: 100%;
-            background-color: var(--grayColor);
+            background-color: var(--borderColor);
             width: 100%;
             margin-top: 0.8rem;
             margin-bottom: 1rem;
@@ -101,16 +104,15 @@
         border-radius: 10px 10px 0px 0px;
       }
       .slick-slider {
-        border: 1px solid var(--grayColor);
+        border: 1px solid var(--borderColor);
         border-top: none;
         border-radius: 0px 0px 10px 10px;
-
         .experiences-container {
           padding: 0;
           &:before {
             width: 100%;
             height: 1px;
-            background-color: var(--grayColor);
+            background-color: var(--borderColor);
             position: absolute;
             top: 47%;
             bottom: 47%;

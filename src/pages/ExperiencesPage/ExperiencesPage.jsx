@@ -7,7 +7,7 @@ import Slider from "react-slick";
 const ExperiencesPage = () => {
   let settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1

@@ -8,13 +8,14 @@
     width: 100%;
     display: flex;
     .home-caption {
-      border: 2px dashed var(--grayColor);
+      border: 2px dashed var(--borderColor);
       height: 100%;
-      padding: 20px;
+      padding-bottom:20px;
       .caption-top {
-        background-color: var(--whiteColor);
-        padding: 10px;
-        border: 1px solid var(--grayColor);
+        background-color: var(--firstBgColor);
+        color:var(--textColor);
+        padding: 25px;
+        border-radius: 5px;
         span {
           font-size: 25px;
           font-weight: bold;
@@ -23,10 +24,12 @@
           font-size: 25px;
           font-weight: bold;
           span {
-            color: var(--primaryColor);
+            color: var(--borderColor);
           }
         }
         p {
+          padding-left:10px;
+          color:var(--grayColor);
           font-size: 14px;
         }
       }

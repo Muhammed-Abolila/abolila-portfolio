@@ -41,12 +41,12 @@ const BottomNavbar = () => {
             <img src={contact} alt="contact" />
           </Link>
         </li>
-        <li>
+        {/* <li>
         <div className="my-tooltip">testimonials</div>
           <Link to="/testimonials">
             <img src={me} alt="testimonials" />
           </Link>
-        </li>
+        </li> */}
         <li>
         <div className="my-tooltip">experiences</div>
           <Link to="/experiences">

@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   .portfolio-content {
-    border: 1px solid var(--grayColor);
+    border: 1px solid var(--borderColor);
     overflow: hidden;
     border-radius: 10px;
     .caption {
-      background-color: var(--grayColor);
+      background-color: var(--firstBgColor);
       height: 100%;
       display: flex;
       align-items: center;
@@ -17,6 +17,7 @@
       position: relative;
       padding: 0px 10px;
       h2 {
+        color:var(--textColor);
         font-size: 1.3rem;
         width: 100%;
         font-weight: 600;
@@ -45,14 +46,14 @@
           button {
             &:before {
               font-size: 15px;
-              color: var(--primaryColor);
+              color: var(--borderColor);
             }
           }
         }
       }
       .portfolio-container {
         .content {
-          border: 1px solid var(--grayColor);
+          border: 1px solid var(--borderColor);
           position: relative;
           cursor: pointer;
           overflow: hidden;
@@ -68,7 +69,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: var(--whiteColor);
+            background-color: var(--firstBgColor);
             opacity: 0;
             transition: opacity 0.4s;
           }
@@ -86,12 +87,15 @@
               font-size: 1.5rem;
               transform: scale(0);
               margin: 0;
+              color:var(--textColor);
               transition: transform 0.6s;
+              
             }
             p {
               font-size: 1.2rem;
               letter-spacing: 1px;
               transform: scale(0);
+              color:var(--grayColor);
               transition: transform 0.6s 0.2s;
             }
           }
@@ -109,22 +113,43 @@
               text-decoration: none;
               color: #000;
               div {
-                background-color: var(--whiteColor);
+                background-color: #fff;
                 padding: 7px 14px;
                 font-size: 20px;
-                border: 1px solid var(--grayColor);
+                border: 1px solid var(--borderColor);
                 transition: all 0.5s;
                 border-radius: 5px;
                 transform: translateY(7px);
                 &:hover {
-                  background-color: var(--primaryColor);
-                  border: 1px solid var(--primaryColor);
+                  background-color: var(--borderColor);
+                  border: 1px solid var(--borderColor);
                   color: var(--whiteColor);
                   animation-name: links-animation;
                   animation-duration: 0.2s;
                   animation-iteration-count: 4;
                   animation-direction: alternate;
                 }
+              }
+            }
+          }
+          .utilities{
+            position: absolute;
+            bottom:-100%;
+            left:0;
+            right:0;
+            text-align: center;
+            padding:7px 18px;
+            background-color: var(--firstBgColor);
+            color:var(--grayColor);
+            border-top:1px solid var(--borderColor);
+            transition:bottom .6s ease-in-out;
+            p{
+              line-height: 25px;
+              margin:0px;
+              font-size: .9rem;
+              span{
+                text-transform: capitalize;
+                font-size: 1.1rem;
               }
             }
           }
@@ -145,6 +170,9 @@
             }
             .project-links {
               transform: translateY(0px);
+            }
+            .utilities{
+              bottom:0;
             }
           }
         }

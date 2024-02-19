@@ -5,13 +5,13 @@
   align-items: center;
   justify-content: center;
   .skills-content {
-    background-color: var(--whiteColor);
-    border: 1px solid var(--grayColor);
+    background-color: var(--firstBgColor);
+    border: 1px solid var(--borderColor);
     border-radius: 10px;
     overflow: hidden;
     .one-skill {
       padding: 40px 0px;
-      border-left: 1px solid var(--grayColor);
+      border-left: 1px solid var(--borderColor);
       text-align: center;
       h3 {
         font-size: 1.6rem;
@@ -19,11 +19,12 @@
         padding: 15px 20px;
         position: relative;
         text-transform: capitalize;
+        color:var(--textColor);
         &:after {
           content: "";
           height: 1px;
           width: 60%;
-          background-color: var(--grayColor);
+          background-color: var(--borderColor);
           position: absolute;
           top: 100%;
           left: 20%;
@@ -47,6 +48,7 @@
       .one-skill-content {
         display: block;
         text-align: start;
+        color:var(--grayColor);
         li {
           padding-top: 7px;
           font-size: 1rem;
@@ -79,7 +81,7 @@
       margin: 20px 0px;
       .one-skill {
         padding: 10px 0px;
-        border-top: 1px solid var(--grayColor);
+        border-top: 1px solid var(--borderColor);
       }
     }
   }
