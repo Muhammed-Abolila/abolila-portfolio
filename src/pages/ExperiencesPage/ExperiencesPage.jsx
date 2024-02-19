@@ -19,12 +19,12 @@ const ExperiencesPage = () => {
       <Container>
         <div className="experiences-content">
           <Row>
-            <Col sm={{span:10,offset:1}} lg={{ span: 4 ,offset:0}} className="p-0">
+            <Col sm={{span:12}} lg={{ span:4}} className="p-md-0">
               <div className="image">
                 <h2>M</h2>
               </div>
             </Col>
-            <Col sm={{span:10,offset:1}} lg={{ span: 8 ,offset:0}} className="p-0">
+            <Col sm={{span:12}} lg={{ span: 8}} className="p-md-0">
               <Slider {...settings}>
                 <div className="experiences-container">
                   <Row>

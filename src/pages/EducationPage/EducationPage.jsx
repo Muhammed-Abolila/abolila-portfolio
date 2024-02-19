@@ -22,12 +22,12 @@ const EducationPage = () => {
         <Container>
           <div className="education-content">
             <Row>
-              <Col sm={{span:12}} lg={{ span: 4}} className="p-0">
+              <Col sm={{span:12}} lg={{ span: 4}} className="p-md-0">
                 <div className="image">
                   <h2>Muhammed Abo Lila</h2>
                 </div>
               </Col>
-              <Col sm={{span:12}} lg={{ span:8}} className="p-0">
+              <Col sm={{span:12}} lg={{ span:8}} className="p-md-0">
                 <Slider {...settings}>
                   <div className="education-container">
                     <Row>

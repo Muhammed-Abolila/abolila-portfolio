@@ -2,8 +2,185 @@
 .portfolio {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  .portfolio-content {
+    border: 1px solid var(--grayColor);
+    overflow: hidden;
+    border-radius: 10px;
+    .caption {
+      background-color: var(--grayColor);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 0px 10px;
+      h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        font-weight: 600;
+        text-align: center;
+      }
+      .social-links-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 15px;
+        .social-links {
+          gap: 10px;
+        }
+      }
+    }
+    .slick-slider {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .slick-arrow {
+        display: none !important;
+      }
+      .slick-dots {
+        bottom: 10px;
+        li {
+          button {
+            &:before {
+              font-size: 15px;
+              color: var(--primaryColor);
+            }
+          }
+        }
+      }
+      .portfolio-container {
+        .content {
+          border: 1px solid var(--grayColor);
+          position: relative;
+          cursor: pointer;
+          overflow: hidden;
+          .image-container {
+            img {
+              width: 100%;
+              transition: transform 0.4s;
+            }
+          }
+          .layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--whiteColor);
+            opacity: 0;
+            transition: opacity 0.4s;
+          }
+          .content-caption {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+              font-size: 1.5rem;
+              transform: scale(0);
+              margin: 0;
+              transition: transform 0.6s;
+            }
+            p {
+              font-size: 1.2rem;
+              letter-spacing: 1px;
+              transform: scale(0);
+              transition: transform 0.6s 0.2s;
+            }
+          }
+          .project-links {
+            position: absolute;
+            top: 0;
+            left: 17px;
+            width: 100px;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+            transform: translateY(-50px);
+            transition: transform 0.6s;
+            a {
+              text-decoration: none;
+              color: #000;
+              div {
+                background-color: var(--whiteColor);
+                padding: 7px 14px;
+                font-size: 20px;
+                border: 1px solid var(--grayColor);
+                transition: all 0.5s;
+                border-radius: 5px;
+                transform: translateY(7px);
+                &:hover {
+                  background-color: var(--primaryColor);
+                  border: 1px solid var(--primaryColor);
+                  color: var(--whiteColor);
+                  animation-name: links-animation;
+                  animation-duration: 0.2s;
+                  animation-iteration-count: 4;
+                  animation-direction: alternate;
+                }
+              }
+            }
+          }
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
+            .layer {
+              opacity: 0.7;
+            }
+            .content-caption {
+              h3 {
+                transform: scale(1);
+              }
+              p {
+                transform: scale(1);
+              }
+            }
+            .project-links {
+              transform: translateY(0px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Start Portfolio Animation
+@keyframes links-animation {
+  from {
+    transform: translateY(7px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+// End Portfolio Animation
+// Start portfolio Media Query
+@media screen and (max-width: 991px) {
+  .portfolio {
+    height: 100%;
+    margin: 50px 0px;
+    .portfolio-content {
+      margin: 20px 0px;
+      .caption {
+        height: 50vh;
+      }
+      .slick-slider {
+        border-top: none;
+        .portfolio-container {
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
+// End portfolio Media Query
 // End Portfolio Section
