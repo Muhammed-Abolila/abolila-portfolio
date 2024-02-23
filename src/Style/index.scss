@@ -9,13 +9,10 @@
 @import "../pages/ContactPage/ContactPage";
 @import "../pages/PortfolioPage/PortfolioPage";
 @import "../components/utilities/SocialLinks/SocialLinks";
+@import "../components/utilities/Loading/Loading";
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--secondBgColor);
-    // background-image: url("../assets/img/bg.jpg");
-    // background-attachment: fixed;
-    // background-position: 100% 30%;
-    // background-size: cover;
 }
 *{
     box-sizing: border-box;

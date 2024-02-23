@@ -4,10 +4,11 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 20;
   background-color: var(--firstBgColor);
   color:var(--textColor);
   border-bottom:1px solid var(--borderColor);
+  transition:top 1s ease-in-out;
   .top-nav-bar {
     margin: auto;
     width: 100%;

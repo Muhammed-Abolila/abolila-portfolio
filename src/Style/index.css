@@ -18,10 +18,12 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 20;
   background-color: var(--firstBgColor);
   color: var(--textColor);
   border-bottom: 1px solid var(--borderColor);
+  -webkit-transition: top 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 nav .top-nav-bar {
@@ -81,6 +83,9 @@ nav .top-nav-bar .text:before {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 20;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
 }
 
 .navbar ul {
@@ -1429,6 +1434,153 @@ nav .top-nav-bar .text:before {
   }
   .social-links li {
     font-size: 1.5rem;
+  }
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading .layer {
+  background-color: var(--borderColor);
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading .caption {
+  z-index: 20;
+  text-align: center;
+  position: relative;
+  padding: 15px 25px;
+  overflow: hidden;
+}
+
+.loading .caption:after, .loading .caption:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  top: 0%;
+  bottom: 95%;
+  width: 100%;
+  background-color: var(--firstBgColor);
+  border-radius: 10px;
+  -webkit-animation-name: afterAnimation;
+          animation-name: afterAnimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.loading .caption:before {
+  top: 95%;
+  bottom: 0%;
+  -webkit-animation-name: beforeAnimation;
+          animation-name: beforeAnimation;
+}
+
+.loading .caption .image-container {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.loading .caption .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.loading .caption .image-container h5 {
+  color: var(--textColor);
+  margin-top: 10px;
+}
+
+@-webkit-keyframes beforeAnimation {
+  0% {
+    left: -110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: 110%;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: -110%;
+  }
+}
+
+@keyframes beforeAnimation {
+  0% {
+    left: -110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: 110%;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: -110%;
+  }
+}
+
+@-webkit-keyframes afterAnimation {
+  0% {
+    left: 110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: -110%;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes afterAnimation {
+  0% {
+    left: 110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: -110%;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: 110%;
   }
 }
 

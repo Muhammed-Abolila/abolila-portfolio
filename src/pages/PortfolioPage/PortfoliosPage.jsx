@@ -1,5 +1,3 @@
-import TopNavbar from "../../components/utilities/TopNavbar/TopNavbar";
-import BottomNavbar from "../../components/utilities/BottomNavbar/BottomNavbar";
 import { Container, Row, Col } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,7 +15,9 @@ import image9 from "../../assets/img/portfolios/9.jpg";
 import image10 from "../../assets/img/portfolios/10.jpg";
 import image11 from "../../assets/img/portfolios/11.jpg";
 import image12 from "../../assets/img/portfolios/12.jpg";
-const PortfoliosPage = () => {
+import image from "../../assets/icons/portfolios.png";
+import Loading from "../../components/utilities/Loading/Loading";
+const PortfoliosPage = ({ loading }) => {
   let settings = {
     dots: true,
     infinite: false,
@@ -27,483 +27,485 @@ const PortfoliosPage = () => {
   };
   return (
     <>
-      <TopNavbar text="PORTFOLIO" />
-      <section className="portfolio">
-        <Container>
-          <div className="portfolio-content">
-            <Row className="">
-              <Col sm={{ span: 12 }} lg={{ span: 3 }} className="p-0">
-                <div className="caption">
-                  <h2>
-                    Muhammed Abo Lila <br />
-                    Front-End Developer
-                  </h2>
-                  <div className="social-links-container">
-                    <SocialLinks />
+      {loading === false ? (
+        <section className="portfolio">
+          <Container>
+            <div className="portfolio-content">
+              <Row className="">
+                <Col sm={{ span: 12 }} lg={{ span: 3 }} className="p-0">
+                  <div className="caption">
+                    <h2>
+                      Muhammed Abo Lila <br />
+                      Front-End Developer
+                    </h2>
+                    <div className="social-links-container">
+                      <SocialLinks />
+                    </div>
                   </div>
-                </div>
-              </Col>
-              <Col sm={{ span: 12 }} lg={{ span: 9 }} className="p-0">
-                <Slider {...settings} className="">
-                  <div className="portfolio-container">
-                    <Row>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image1} alt="" />
+                </Col>
+                <Col sm={{ span: 12 }} lg={{ span: 9 }} className="p-0">
+                  <Slider {...settings} className="">
+                    <div className="portfolio-container">
+                      <Row>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image1} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image2} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image3} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image4} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image2} alt="" />
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image5} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image6} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
+                        </Col>
+                      </Row>
+                    </div>
+                    <div className="portfolio-container">
+                      <Row>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image7} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image8} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image3} alt="" />
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image9} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image10} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="pe-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image11} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
+                        </Col>
+                        <Col
+                          sm={{ span: 12 }}
+                          md={{ span: 6 }}
+                          lg={{ span: 4 }}
+                          className="ps-md-0 p-lg-0"
+                        >
+                          <div className="content">
+                            <div className="image-container">
+                              <img src={image12} alt="" />
+                            </div>
+                            <div className="layer"></div>
+                            <div className="content-caption">
+                              <h3>Shop Cart</h3>
+                              <p>Ecommerce App</p>
+                            </div>
+                            <div className="project-links">
+                              <a
+                                href="https://abolila-shopcart.netlify.app/"
+                                target="_blank"
+                              >
+                                <div className="icon-link"></div>
+                              </a>
+                              <a
+                                href="https://github.com/Muhammed-Abolila/Shop-Cart"
+                                target="_blank"
+                              >
+                                <div className="icon-github"></div>
+                              </a>
+                            </div>
+                            <div className="utilities">
+                              <p>
+                                <span>utilities:</span> <br />
+                                HTML5 , Css3 , Js
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image4} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image5} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image6} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                  <div className="portfolio-container">
-                    <Row>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image7} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image8} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image9} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image10} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="pe-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image11} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                      <Col
-                        sm={{ span: 12 }}
-                        md={{ span: 6 }}
-                        lg={{ span: 4 }}
-                        className="ps-md-0 p-lg-0"
-                      >
-                        <div className="content">
-                          <div className="image-container">
-                            <img src={image12} alt="" />
-                          </div>
-                          <div className="layer"></div>
-                          <div className="content-caption">
-                            <h3>Shop Cart</h3>
-                            <p>Ecommerce App</p>
-                          </div>
-                          <div className="project-links">
-                            <a
-                              href="https://abolila-shopcart.netlify.app/"
-                              target="_blank"
-                            >
-                              <div className="icon-link"></div>
-                            </a>
-                            <a
-                              href="https://github.com/Muhammed-Abolila/Shop-Cart"
-                              target="_blank"
-                            >
-                              <div className="icon-github"></div>
-                            </a>
-                          </div>
-                          <div className="utilities">
-                            <p>
-                              <span>utilities:</span> <br />
-                              HTML5 , Css3 , Js
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </Slider>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </section>
-      <BottomNavbar />
+                        </Col>
+                      </Row>
+                    </div>
+                  </Slider>
+                </Col>
+              </Row>
+            </div>
+          </Container>
+        </section>
+      ) : (
+        <Loading image={image} text="Portfolios" />
+      )}
     </>
   );
 };

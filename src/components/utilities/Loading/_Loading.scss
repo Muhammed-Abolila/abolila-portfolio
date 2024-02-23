@@ -1,0 +1,93 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: opacity 1s ease-in-out;
+  .layer {
+    background-color: var(--borderColor);
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .caption {
+    z-index: 20;
+    text-align: center;
+    position: relative;
+    padding: 15px 25px;
+    overflow: hidden;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      top: 0%;
+      bottom:95%;
+      width: 100%;
+      background-color: var(--firstBgColor);
+      border-radius: 10px;
+      animation-name: afterAnimation;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    &:before {
+      @extend .caption:after;
+      top:95%;
+      bottom: 0%;
+      animation-name: beforeAnimation;
+    }
+    .image-container {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      h5 {
+        color: var(--textColor);
+        margin-top:10px;
+      }
+    }
+  }
+}
+// Start Animation
+@keyframes beforeAnimation {
+  0% {
+    left: -110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: 110%;
+  }
+  75% {
+    left: 0;
+  }
+  100%{
+    left:-110%
+  }
+};
+@keyframes afterAnimation {
+  0% {
+    left: 110%;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: -110%;
+  }
+  75% {
+    left: 0;
+  }
+  100%{
+    left:110%
+  }
+}
+// End Animation
