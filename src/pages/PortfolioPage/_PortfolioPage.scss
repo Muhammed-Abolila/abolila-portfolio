@@ -17,11 +17,22 @@
       position: relative;
       padding: 0px 10px;
       h2 {
-        color:var(--textColor);
+        color: var(--textColor);
         font-size: 1.3rem;
-        width: 100%;
+        width: 270px;
         font-weight: 600;
         text-align: center;
+        position: relative;
+        height: 50px;
+        &:before {
+          content: "|";
+          position: absolute;
+          top: 0;
+          left: 25px;
+          animation-name: title;
+          animation-duration: 15s;
+          animation-iteration-count: infinite;
+        }
       }
       .social-links-container {
         position: absolute;
@@ -87,15 +98,14 @@
               font-size: 1.5rem;
               transform: scale(0);
               margin: 0;
-              color:var(--textColor);
+              color: var(--textColor);
               transition: transform 0.6s;
-              
             }
             p {
               font-size: 1.2rem;
               letter-spacing: 1px;
               transform: scale(0);
-              color:var(--grayColor);
+              color: var(--grayColor);
               transition: transform 0.6s 0.2s;
             }
           }
@@ -132,22 +142,22 @@
               }
             }
           }
-          .utilities{
+          .utilities {
             position: absolute;
-            bottom:-100%;
-            left:0;
-            right:0;
+            bottom: -100%;
+            left: 0;
+            right: 0;
             text-align: center;
-            padding:7px 18px;
+            padding: 7px 18px;
             background-color: var(--firstBgColor);
-            color:var(--grayColor);
-            border-top:1px solid var(--borderColor);
-            transition:bottom .6s ease-in-out;
-            p{
+            color: var(--grayColor);
+            border-top: 1px solid var(--borderColor);
+            transition: bottom 0.6s ease-in-out;
+            p {
               line-height: 25px;
-              margin:0px;
-              font-size: .9rem;
-              span{
+              margin: 0px;
+              font-size: 0.9rem;
+              span {
                 text-transform: capitalize;
                 font-size: 1.1rem;
               }
@@ -171,8 +181,8 @@
             .project-links {
               transform: translateY(0px);
             }
-            .utilities{
-              bottom:0;
+            .utilities {
+              bottom: 0;
             }
           }
         }
@@ -180,35 +190,4 @@
     }
   }
 }
-// Start Portfolio Animation
-@keyframes links-animation {
-  from {
-    transform: translateY(7px);
-  }
-  to {
-    transform: translateY(2px);
-  }
-}
-// End Portfolio Animation
-// Start portfolio Media Query
-@media screen and (max-width: 991px) {
-  .portfolio {
-    height: 100%;
-    margin: 50px 0px;
-    .portfolio-content {
-      margin: 20px 0px;
-      .caption {
-        height: 50vh;
-      }
-      .slick-slider {
-        border-top: none;
-        .portfolio-container {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
-
-// End portfolio Media Query
 // End Portfolio Section

@@ -15,10 +15,13 @@ const ContactPage = ({ loading }) => {
                     <h3>get in touch</h3>
                     <h4>get real</h4>
                     <p>
-                      Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.
-                      Accusamus Aperiam Architecto Asperiores At Beatae
-                      Consequatur Distinctio Doloribus Ea, Eveniet Excepturi
-                      Exercitationem Libero Magnam Mollitia.
+                      Whether you're looking for answers, need help, or want to
+                      explore our services further, we're here to help. Contact
+                      us today and experience the real difference we can make.
+                      <br />
+                      We are committed to ensuring your satisfaction, achieving
+                      real value, and providing exceptional solutions for your
+                      experience.
                     </p>
                   </div>
                   <SocialLinks />

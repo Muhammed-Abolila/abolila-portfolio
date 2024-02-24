@@ -10,6 +10,8 @@
 @import "../pages/PortfolioPage/PortfolioPage";
 @import "../components/utilities/SocialLinks/SocialLinks";
 @import "../components/utilities/Loading/Loading";
+@import "../Style/Animation";
+@import "../Style/MediaQuery";
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--secondBgColor);

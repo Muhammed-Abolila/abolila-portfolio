@@ -34,10 +34,7 @@ const PortfoliosPage = ({ loading }) => {
               <Row className="">
                 <Col sm={{ span: 12 }} lg={{ span: 3 }} className="p-0">
                   <div className="caption">
-                    <h2>
-                      Muhammed Abo Lila <br />
-                      Front-End Developer
-                    </h2>
+                    <h2></h2>
                     <div className="social-links-container">
                       <SocialLinks />
                     </div>

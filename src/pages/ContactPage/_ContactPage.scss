@@ -8,20 +8,20 @@
     border: 2px dashed var(--borderColor);
     .caption {
       background-color: var(--firstBgColor);
-      padding:25px;
+      padding: 25px;
       height: 100%;
-      padding-bottom:20px;
+      padding-bottom: 20px;
       h3,
       h4 {
-        color:var(--textColor);
+        color: var(--textColor);
         text-transform: uppercase;
         font-size: 2rem;
       }
       p {
         line-height: 30px;
         padding-left: 10px;
-        color:var(--grayColor);
-          font-size: 14px;
+        color: var(--grayColor);
+        font-size: 14px;
       }
     }
   }
@@ -47,7 +47,7 @@
     button {
       border: 1px solid var(--borderColor);
       background-color: var(--firstBgColor);
-      color:var(--textColor);
+      color: var(--textColor);
       transition: all 0.4s ease-in-out;
       &:hover {
         background-color: var(--borderColor);
@@ -57,33 +57,4 @@
     }
   }
 }
-// Start Contant Me Media Query
-@media screen and (max-width: 991px) {
-  .contact-me {
-    margin: 50px 0px;
-    height: 100%;
-    .form {
-      padding-left: 0;
-      margin: 20px 0px;
-    }
-  }
-}
-@media screen and (max-width: 350px) {
-  .contact-me {
-    margin: 50px 0px;
-    height: 100%;
-    .content {
-      .caption {
-        h3,
-        h4 {
-          font-size: 1.6rem;
-        }
-        p {
-          line-height: 22px;
-        }
-      }
-    }
-  }
-}
-// End Contant Me Media Query
 // End Contact Me Section

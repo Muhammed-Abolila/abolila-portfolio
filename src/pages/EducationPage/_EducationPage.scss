@@ -66,11 +66,14 @@
           right: 50%;
         }
         .content {
-          padding: 0px 30px;
+          padding: 0px 10px;
           color:var(--grayColor);
           h3 {
             color:var(--textColor);
             font-size: 1.5rem;
+            span{
+              font-size: 1rem;
+            }
           }
           .date {
             margin: 10px 0px;
@@ -83,47 +86,17 @@
             margin-top: 0.8rem;
             margin-bottom: 1rem;
           }
-          p {
-            line-height: 25px;
+          ul{
+            padding: 0px 20px;
+            line-height: 20px;
             text-align: left;
+            li{
+              margin-bottom: 5px;
+            }
           }
         }
       }
     }
   }
 }
-// Start Education Media Query
-@media screen and (max-width: 991px) {
-  .education {
-    height: 100%;
-    margin: 50px 0px;
-    .education-content {
-      margin: 20px 0px;
-      .image {
-        height: 350px;
-        border-radius: 10px 10px 0px 0px;
-      }
-      .slick-slider {
-        border: 1px solid var(--borderColor);
-        border-top: none;
-        border-radius: 0px 0px 10px 10px;
-        .education-container {
-          padding: 0;
-          &:before {
-            width: 100%;
-            height: 1px;
-            top: 47%;
-            bottom: 47%;
-            left: 0;
-            right: 0;
-          }
-        }
-        .content {
-          padding: 50px 30px !important;
-        }
-      }
-    }
-  }
-}
-// End Education Media Query
 // End Education Section

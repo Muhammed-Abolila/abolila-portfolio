@@ -1,8 +1,21 @@
 import { useState, useEffect } from "react";
-const TopNavbar = ({ text, loading}) => {
+import { useLocation } from "react-router";
+const TopNavbar = ({loading}) => {
+  let [header,setHeader]=useState('');
   const [theme, setTheme] = useState("");
   let [top,setTop]=useState("");
-  let [resize,setResize]=useState(false)
+  let [resize,setResize]=useState(false);
+  let location=useLocation();
+ 
+  useEffect(()=>{
+    if(location.pathname=="/"||location.pathname=="/home"){
+      setHeader("Muhammed Abo Lila")
+    }else if(location.pathname=="/education"){
+      setHeader("education & courses");
+    }else{
+      setHeader(location.pathname.slice(1));
+    }
+  },[location.pathname])
 // Dark Mood And Light Mood
   const storedTheme = localStorage.getItem("theme");
   const changeTheme = () => {
@@ -46,7 +59,7 @@ const TopNavbar = ({ text, loading}) => {
     <nav style={{top:top}}>
       <div className="top-nav-bar">
         <div className={`${resize===false||''?"icon-resize-full-screen":"icon-resize-100"} nav-icon`} onClick={toggleFullScreen}></div>
-        <div className="text">{text}</div>
+        <div className="text">{header}</div>
         <div className={`${storedTheme==="dark"?"icon-IcoMoon":"icon-sun"} nav-icon`} onClick={changeTheme}></div>
       </div>
     </nav>

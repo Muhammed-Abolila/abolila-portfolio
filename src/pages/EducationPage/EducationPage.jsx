@@ -21,7 +21,6 @@ const EducationPage = ({ loading }) => {
               <Row>
                 <Col sm={{ span: 12 }} lg={{ span: 4 }} className="p-md-0">
                   <div className="image">
-                    <h2>Muhammed Abo Lila</h2>
                   </div>
                 </Col>
                 <Col sm={{ span: 12 }} lg={{ span: 8 }} className="p-md-0">
@@ -30,54 +29,47 @@ const EducationPage = ({ loading }) => {
                       <Row>
                         <Col sm={{ span: 12 }} lg={{ span: 6 }}>
                           <div className="content">
-                            <h3>Cairo University , FOC</h3>
-                            <div className="date">9/2012 - 5/2017</div>
+                            <h3>
+                              Front-End Diploma <br />
+                              <span>Provider : Route Academy</span>
+                            </h3>
+                            <div className="date">9/2022 - 12/2022</div>
                             <div className="brdr"></div>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Officiis, esse?
-                            </p>
+                            <ul>
+                              <li>
+                                Attained excellent skills developing frontend
+                                interfaces using HTML5, CSS3, Bootstrap5,
+                                Js(ES6,OOP), Sass, React.js and Redux.js
+                              </li>
+                              <li>
+                                Demonstrated practical abilities through the
+                                implementation of a variety of innovative and
+                                realistic projects in frontend development.
+                              </li>
+                            </ul>
                           </div>
                         </Col>
 
                         <Col sm={{ span: 12 }} lg={{ span: 6 }}>
                           <div className="content">
-                            <h3>Cairo University , FOC</h3>
-                            <div className="date">9/2012 - 5/2017</div>
+                            <h3>
+                              React.js with Redux <br />
+                              <span>Provider : Index Academy</span>
+                            </h3>
+                            <div className="date">8/2023 - 12/2023</div>
                             <div className="brdr"></div>
-                            <p>
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Veniam ab assumenda quas in
-                              esse. Est.
-                            </p>
-                          </div>
-                        </Col>
-                      </Row>
-                    </div>
-                    <div className="education-container">
-                      <Row>
-                        <Col sm={{ span: 12 }} lg={{ span: 6 }}>
-                          <div className="content">
-                            <h3>Cairo University , FOC</h3>
-                            <div className="date">9/2012 - 5/2017</div>
-                            <div className="brdr"></div>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Officiis, esse?
-                            </p>
-                          </div>
-                        </Col>
-
-                        <Col sm={{ span: 12 }} lg={{ span: 6 }}>
-                          <div className="content">
-                            <h3>Cairo University , FOC</h3>
-                            <div className="date">9/2012 - 5/2017</div>
-                            <div className="brdr"></div>
-                            <p>
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Veniam ab assumenda quas in
-                              esse. Est.
-                            </p>
+                            <ul>
+                              <li>
+                                learning redux.js in deepth with react.js
+                              </li>
+                              <li>
+                                Building a full e-commerce website from scratch
+                                with React.js and Redux involves creating a
+                                complete online store with features like product
+                                listing, product details, shopping cart, user
+                                authentication and more..
+                              </li>
+                            </ul>
                           </div>
                         </Col>
                       </Row>

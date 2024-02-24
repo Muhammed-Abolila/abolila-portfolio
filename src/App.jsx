@@ -7,14 +7,17 @@ import ExperiencesPage from "./pages/ExperiencesPage/ExperiencesPage";
 import HomePage from "./pages/HomePage/HomePage";
 import TopNavbar from "./components/utilities/TopNavbar/TopNavbar";
 import BottomNavbar from "./components/utilities/BottomNavbar/BottomNavbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import TestimonialsPage from "./pages/TestimonialsPage/TestimonialsPage";
 function App() {
-  let[loading,setLoading]=useState(false);  
+  let[loading,setLoading]=useState(false); 
+  useEffect(()=>{
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
   return (
     <>
       <HashRouter>
-      <TopNavbar text="Muhammed Abo Lila" loading={loading}/>
+      <TopNavbar loading={loading}/>
         <Routes>
           <Route path="/" element={<HomePage loading={loading}/>}/>
           <Route path="/home" element={<HomePage loading={loading}/>}/>

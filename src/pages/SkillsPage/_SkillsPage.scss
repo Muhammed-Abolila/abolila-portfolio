@@ -59,47 +59,4 @@
     }
   }
 }
-// Start Skills Media Query
-@media screen and (max-width: 1200px) {
-  .skills {
-    .skills-content {
-      .personal {
-        .one-skill-content {
-          li {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 991px) {
-  .skills {
-    height: 100%;
-    margin: 50px 0px;
-    .skills-content {
-      margin: 20px 0px;
-      .one-skill {
-        padding: 10px 0px;
-        border-top: 1px solid var(--borderColor);
-      }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .skills {
-    .skills-content {
-      .personal {
-        .one-skill-content {
-          li {
-            margin-left: 10px;
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-// End Skills Media Query
 // End Skills Section

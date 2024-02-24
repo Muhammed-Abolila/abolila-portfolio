@@ -35,6 +35,7 @@ const SkillsPage = ({ loading }) => {
                     <h3>Libraries</h3>
                     <div className="one-skill-content">
                       <div className="icon-bootstrap"></div>
+                      <div className="icon-jquery"></div>
                       <div className="icon-react"></div>
                       <div className="icon-redux"></div>
                     </div>

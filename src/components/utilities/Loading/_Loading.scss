@@ -1,3 +1,4 @@
+// Start Loading Page
 .loading {
   display: flex;
   align-items: center;
@@ -55,39 +56,4 @@
     }
   }
 }
-// Start Animation
-@keyframes beforeAnimation {
-  0% {
-    left: -110%;
-  }
-  25% {
-    left: 0;
-  }
-  50% {
-    left: 110%;
-  }
-  75% {
-    left: 0;
-  }
-  100%{
-    left:-110%
-  }
-};
-@keyframes afterAnimation {
-  0% {
-    left: 110%;
-  }
-  25% {
-    left: 0;
-  }
-  50% {
-    left: -110%;
-  }
-  75% {
-    left: 0;
-  }
-  100%{
-    left:110%
-  }
-}
-// End Animation
+// End Loading page

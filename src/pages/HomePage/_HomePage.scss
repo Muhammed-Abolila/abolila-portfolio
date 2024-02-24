@@ -17,11 +17,11 @@
         padding: 25px;
         border-radius: 5px;
         span {
-          font-size: 25px;
+          font-size: 1.5rem;
           font-weight: bold;
         }
         h1 {
-          font-size: 25px;
+          font-size: 1.5rem;
           font-weight: bold;
           span {
             color: var(--borderColor);
@@ -48,28 +48,4 @@
     }
   }
 }
-// Start Home Media Query
-@media screen and (max-width: 991px) {
-  .home {
-    margin: 50px 0px;
-    height: 100%;
-    .home-content {
-      .caption-col {
-        order: 2 !important;
-        margin-top: 20px;
-        .home-caption {
-          height: 95%;
-        }
-      }
-      .image-col {
-        order: 1 !important;
-        .home-image {
-          width: 75%;
-          margin: auto;
-        }
-      }
-    }
-  }
-}
-// End Home media Query
 // End Home Section

@@ -1,0 +1,373 @@
+// Start Animation
+// Start Portfolio Animation
+@keyframes links-animation {
+    from {
+      transform: translateY(7px);
+    }
+    to {
+      transform: translateY(2px);
+    }
+  }
+
+@keyframes title {
+    0% {
+      content: "|";
+    }
+    1% {
+      content: "";
+    }
+    2% {
+      content: "|";
+    }
+    3% {
+      content: "";
+    }
+    4% {
+      content: "|";
+    }
+    5% {
+      content: "";
+    }
+    6% {
+      content: "|";
+    }
+    7% {
+      content: "";
+    }
+    8% {
+      content: "|";
+    }
+    9% {
+      content: "";
+    }
+    10% {
+      content: "|";
+    }
+    11% {
+      content: "M|";
+    }
+    12% {
+      content: "Mu|";
+    }
+    13% {
+      content: "Muh|";
+    }
+    14% {
+      content: "Muha|";
+    }
+    15% {
+      content: "Muham|";
+    }
+    16% {
+      content: "Muhamm|";
+    }
+    17% {
+      content: "Muhamme|";
+    }
+    18% {
+      content: "Muhammed|";
+    }
+    19% {
+      content: "Muhammed |";
+    }
+    20% {
+      content: "Muhammed A|";
+    }
+    21% {
+      content: "Muhammed Ab|";
+    }
+    22% {
+      content: "Muhammed Abo|";
+    }
+    23% {
+      content: "Muhammed Abo |";
+    }
+    24% {
+      content: "Muhammed Abo L|";
+    }
+    25% {
+      content: "Muhammed Abo Li|";
+    }
+    26% {
+      content: "Muhammed Abo Lil|";
+    }
+    27% {
+      content: "Muhammed Abo Lila|";
+    }
+    28% {
+      content: "Muhammed Abo Lila ";
+    }
+    29% {
+      content: "Muhammed Abo Lila|";
+    }
+    30% {
+      content: "Muhammed Abo Lila ";
+    }
+    31% {
+      content: "Muhammed Abo Lila|";
+    }
+    32% {
+      content: "Muhammed Abo Lila ";
+    }
+    33% {
+      content: "Muhammed Abo Lila|";
+    }
+    34% {
+      content: "Muhammed Abo Lil|";
+    }
+    35% {
+      content: "Muhammed Abo Li|";
+    }
+    36% {
+      content: "Muhammed Abo L|";
+    }
+    37% {
+      content: "Muhammed Abo |";
+    }
+    38% {
+      content: "Muhammed Abo|";
+    }
+    39% {
+      content: "Muhammed Ab|";
+    }
+    40% {
+      content: "Muhammed A|";
+    }
+    41% {
+      content: "Muhammed |";
+    }
+    42% {
+      content: "Muhammed|";
+    }
+    43% {
+      content: "Muhamme|";
+    }
+    44% {
+      content: "Muhamm|";
+    }
+    45% {
+      content: "Muham|";
+    }
+    46% {
+      content: "Muha|";
+    }
+    47% {
+      content: "Muh|";
+    }
+    48% {
+      content: "Mu|";
+    }
+    49% {
+      content: "M|";
+    }
+    50% {
+      content: "|";
+    }
+    51% {
+      content: "";
+    }
+    52% {
+      content: "|";
+    }
+    53% {
+      content: "";
+    }
+    54% {
+      content: "|";
+    }
+    55% {
+      content: "";
+    }
+    56% {
+      content: "|";
+    }
+    57% {
+      content: "F|";
+    }
+    58% {
+      content: "Fr|";
+    }
+    59% {
+      content: "Fro|";
+    }
+    60% {
+      content: "Fron|";
+    }
+    61% {
+      content: "Front|";
+    }
+    62% {
+      content: "Front |";
+    }
+    63% {
+      content: "Front E|";
+    }
+    64% {
+      content: "Front En|";
+    }
+    65% {
+      content: "Front End|";
+    }
+    66% {
+      content: "Front End |";
+    }
+    67% {
+      content: "Front End D|";
+    }
+    68% {
+      content: "Front End De|";
+    }
+    69% {
+      content: "Front End Dev|";
+    }
+    70% {
+      content: "Front End Deve|";
+    }
+    71% {
+      content: "Front End Devel|";
+    }
+    72% {
+      content: "Front End Develo|";
+    }
+    73% {
+      content: "Front End Develop|";
+    }
+    74% {
+      content: "Front End Develope|";
+    }
+    75% {
+      content: "Front End Developer|";
+    }
+    76% {
+      content: "Front End Developer ";
+    }
+    77% {
+      content: "Front End Developer|";
+    }
+    78% {
+      content: "Front End Developer ";
+    }
+    79% {
+      content: "Front End Developer|";
+    }
+    80% {
+      content: "Front End Developer ";
+    }
+    81% {
+      content: "Front End Developer|";
+    }
+    82% {
+      content: "Front End Develope|";
+    }
+    83% {
+      content: "Front End Develop|";
+    }
+    84% {
+      content: "Front End Develo|";
+    }
+    85% {
+      content: "Front End Devel|";
+    }
+    86% {
+      content: "Front End Deve|";
+    }
+    87% {
+      content: "Front End Dev|";
+    }
+    88% {
+      content: "Front End De|";
+    }
+    89% {
+      content: "Front End D|";
+    }
+    90% {
+      content: "Front End |";
+    }
+    91% {
+      content: "Front End|";
+    }
+    92% {
+      content: "Front En|";
+    }
+    93% {
+      content: "Front E|";
+    }
+    94% {
+      content: "Front |";
+    }
+    95% {
+      content: "Front|";
+    }
+    96% {
+      content: "Fron|";
+    }
+    97% {
+      content: "Fro|";
+    }
+    98% {
+      content: "Fr|";
+    }
+    99% {
+      content: "F|";
+    }
+    100% {
+      content: "|";
+    }
+  }
+// End Portfolio animation
+// Start Loading Page Animation
+@keyframes beforeAnimation {
+    0% {
+      left: -110%;
+    }
+    25% {
+      left: 0;
+    }
+    50% {
+      left: 110%;
+    }
+    75% {
+      left: 0;
+    }
+    100%{
+      left:-110%
+    }
+  };
+  @keyframes afterAnimation {
+    0% {
+      left: 110%;
+    }
+    25% {
+      left: 0;
+    }
+    50% {
+      left: -110%;
+    }
+    75% {
+      left: 0;
+    }
+    100%{
+      left:110%
+    }
+  }
+  // End Loading Page Animation
+// Start Bottom Navbar animation
+@keyframes iconMove {
+    0% {
+      transform: translateY(0px);
+    }
+    20% {
+      transform: translateY(-3px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+// End Bottom Navbar animation
+// End Animation
