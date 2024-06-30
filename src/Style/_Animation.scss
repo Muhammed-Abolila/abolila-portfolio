@@ -315,23 +315,4 @@
     }
   }
 // End Portfolio animation
-// Start Loading Page Animation
-@keyframes beforeAnimation {
-    0% {
-      left: -110%;
-    }
-    25% {
-      left: 0;
-    }
-    50% {
-      left: 110%;
-    }
-    75% {
-      left: 0;
-    }
-    100%{
-      left:-110%
-    }
-  }
-  // End Loading Page Animation
 // End Animation

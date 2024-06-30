@@ -3,12 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         mainBgColor: "#fff",
         subBgColor: "#e4e4e4",
         mainColor: "#000",
         subColor: "#09c",
-
+        bodyBgColor: "#ddd",
         // .dark {
         //   mainBgColor:#000;
         //   subBgColor:#222;
@@ -18,9 +21,9 @@ export default {
         // }
       },
       animation: {
-        iconMove: 'iconMove 1s ease-in-out',
-        afterAnimation:'afterAnimation 4s ease-in-out infinite',
-        beforeAnimation:'beforeAnimation 4s ease-in-out infinite',
+        iconMove: "iconMove 1s ease-in-out",
+        afterAnimation: "afterAnimation 4s ease-in-out infinite",
+        beforeAnimation: "beforeAnimation 4s ease-in-out infinite",
       },
       keyframes: {
         iconMove: {
@@ -33,26 +36,26 @@ export default {
         },
         afterAnimation: {
           "0%,100%": {
-            left: "110%"
+            left: "110%",
           },
           "25%,75%": {
-            left: "0"
+            left: "0",
           },
-          "50%":{
-            left: "-110%"
-          }
+          "50%": {
+            left: "-110%",
+          },
         },
         beforeAnimation: {
           "0%,100%": {
-            left: "-110%"
+            left: "-110%",
           },
           "25%,75%": {
-            left: "0"
+            left: "0",
           },
           "50%": {
-            left: "110%"
-          }
-        }
+            left: "110%",
+          },
+        },
       },
     },
   },
