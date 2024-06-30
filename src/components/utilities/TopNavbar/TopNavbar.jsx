@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
+import clsx from 'clsx';
 const TopNavbar = ({loading}) => {
   let [header,setHeader]=useState('');
   const [theme, setTheme] = useState("");
-  let [top,setTop]=useState("");
+  let [top,setTop]=useState(0);
   let [resize,setResize]=useState(false);
   let location=useLocation();
  
@@ -35,11 +36,11 @@ const TopNavbar = ({loading}) => {
 // Change NavBar Position
   useEffect(() => {
     if (loading === false) {
-      setTop("0");
+      setTop(0);
     } else if (loading === true) {
-      setTop("-100px");
+      setTop(-100);
       setTimeout(() => {
-        setTop("0");
+        setTop(0);
       },3000);
     }
   }, [loading]);
@@ -56,11 +57,11 @@ const TopNavbar = ({loading}) => {
     }
   }
   return (
-    <nav style={{top:top}}>
-      <div className="top-nav-bar">
-        <div className={`${resize===false||''?"icon-resize-full-screen":"icon-resize-100"} nav-icon`} onClick={toggleFullScreen}></div>
-        <div className="text">{header}</div>
-        <div className={`${storedTheme==="dark"?"icon-IcoMoon":"icon-sun"} nav-icon`} onClick={changeTheme}></div>
+    <nav style={{top:top}} className={`bg-mainBgColor text-mainColor py-1 fixed w-full z-50 border-b border-subColor transition-[top] duration-1000 ease-in-out`}>
+      <div className="m-auto w-full px-5 flex justify-between items-center">
+        <div className={`${resize===false||''?"icon-resize-full-screen":"icon-resize-100"} text-[23px] text-subColor p-[3px] cursor-pointer`} onClick={toggleFullScreen}></div>
+        <div className="text uppercase text-[20px] font-medium relative before:content-[''] before:absolute before:top-[11px] before:left-[-14px] before:bg-subColor before:w-[10px] before:h-[10px] before:rounded-full">{header}</div>
+        <div className={`${storedTheme==="dark"?"icon-IcoMoon":"icon-sun"}  text-[23px] text-subColor p-[3px] cursor-pointer`} onClick={changeTheme}></div>
       </div>
     </nav>
   );

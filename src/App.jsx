@@ -26,7 +26,7 @@ function App() {
           <Route path="/portfolio" element={<PortfoliosPage loading={loading}/>} />
           <Route path="/contact" element={<ContactPage loading={loading}/>} />
           {/* <Route path="/testimonials" element={<TestimonialsPage />} /> */}
-          {/* <Route path="/experiences" element={<ExperiencesPage loading={loading}/>} /> */}
+          <Route path="/experiences" element={<ExperiencesPage loading={loading}/>} />
         </Routes>
         <BottomNavbar loading={loading} setLoading={setLoading} />
       </HashRouter>
