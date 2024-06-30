@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        width: "1320px",
+      },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
       },
@@ -11,13 +14,12 @@ export default {
         subBgColor: "#e4e4e4",
         mainColor: "#000",
         subColor: "#09c",
-        bodyBgColor: "#ddd",
         // .dark {
         //   mainBgColor:#000;
         //   subBgColor:#222;
         //   subColor: #f57201;
         //   mainColor:#fff;
-        //   bodyBgColor: #ddd;
+        //   grayColor: #ddd;
         // }
       },
       animation: {

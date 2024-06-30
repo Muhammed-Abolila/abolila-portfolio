@@ -1,6 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 450px) {
+  .social-links {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  .social-links li {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 380px) {
+   .home-content .home-caption {
+    padding-bottom: 0;
+  }
+  .home-content .home-caption .caption-top span{
+    font-size: 1.1rem;
+  }
+  .home-content .home-caption .caption-top h1{
+    font-size:1.1rem
+  }
 }

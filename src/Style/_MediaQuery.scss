@@ -112,47 +112,6 @@
     }
   }
   // End portfolio Media Query
-// Start Home Media Query
-@media screen and (max-width: 991px) {
-    .home {
-      margin: 50px 0px;
-      height: 100%;
-      .home-content {
-        .caption-col {
-          order: 2 !important;
-          margin-top: 20px;
-          .home-caption {
-            height: 95%;
-          }
-        }
-        .image-col {
-          order: 1 !important;
-          .home-image {
-            width: 75%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 380px) {
-    .home {
-      .home-content {
-        .home-caption {
-          .caption-top {
-            span{
-              font-size: 1.1rem;
-            }
-            h1 {
-              font-size: 1.1rem;
-              font-weight: bold;
-            }
-          }
-        }
-      }
-  }
-  }
-  // End Home media Query
   // Start Contant Me Media Query
 @media screen and (max-width: 991px) {
     .contact-me {
