@@ -19,25 +19,40 @@ export default {
       },
       animation: {
         iconMove: 'iconMove 1s ease-in-out',
+        afterAnimation:'afterAnimation 4s ease-in-out infinite',
+        beforeAnimation:'beforeAnimation 4s ease-in-out infinite',
       },
       keyframes: {
         iconMove: {
-          "0%": {
+          "0%,40%,100%": {
             transform: "translateY(0px)",
           },
-          "20%": {
+          "20%,60%": {
             transform: "translateY(-3px)",
-          },
-          "40%": {
-            transform: "translateY(0px)",
-          },
-          "60%": {
-            transform: "translateY(-3px)",
-          },
-          "100%": {
-            transform: "translateY(0px)",
           },
         },
+        afterAnimation: {
+          "0%,100%": {
+            left: "110%"
+          },
+          "25%,75%": {
+            left: "0"
+          },
+          "50%":{
+            left: "-110%"
+          }
+        },
+        beforeAnimation: {
+          "0%,100%": {
+            left: "-110%"
+          },
+          "25%,75%": {
+            left: "0"
+          },
+          "50%": {
+            left: "110%"
+          }
+        }
       },
     },
   },

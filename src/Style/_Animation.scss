@@ -332,42 +332,6 @@
     100%{
       left:-110%
     }
-  };
-  @keyframes afterAnimation {
-    0% {
-      left: 110%;
-    }
-    25% {
-      left: 0;
-    }
-    50% {
-      left: -110%;
-    }
-    75% {
-      left: 0;
-    }
-    100%{
-      left:110%
-    }
   }
   // End Loading Page Animation
-// Start Bottom Navbar animation
-@keyframes iconMove {
-    0% {
-      transform: translateY(0px);
-    }
-    20% {
-      transform: translateY(-3px);
-    }
-    40% {
-      transform: translateY(0px);
-    }
-    60% {
-      transform: translateY(-3px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-// End Bottom Navbar animation
 // End Animation
