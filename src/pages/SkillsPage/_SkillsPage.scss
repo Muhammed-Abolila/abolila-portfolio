@@ -4,22 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   .skills-content {
     background-color: var(--firstBgColor);
     border: 1px solid var(--borderColor);
     border-radius: 10px;
     overflow: hidden;
+
     .one-skill {
       padding: 40px 0px;
       border-left: 1px solid var(--borderColor);
       text-align: center;
+
       h3 {
         font-size: 1.6rem;
         font-weight: 600;
         padding: 15px 20px;
         position: relative;
         text-transform: capitalize;
-        color:var(--textColor);
+        color: var(--textColor);
+
         &:after {
           content: "";
           height: 1px;
@@ -31,12 +35,14 @@
           right: 20%;
         }
       }
+
       .one-skill-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+
         div {
           width: 50%;
           padding: 10px;
@@ -44,11 +50,13 @@
         }
       }
     }
+
     .personal {
       .one-skill-content {
         display: block;
         text-align: start;
-        color:var(--grayColor);
+        color: var(--grayColor);
+
         li {
           padding-top: 7px;
           font-size: 1rem;
@@ -59,4 +67,5 @@
     }
   }
 }
+
 // End Skills Section
