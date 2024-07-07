@@ -4,8 +4,10 @@ import Loading from "../../components/utilities/Loading/Loading";
 const ContactPage = ({ loading }) => {
   return (
     <>
+     {/* w-[95%] sm:w-[90%] 2xl:w-[1320px] mx-auto h-full mb-20 mt-12 flex items-center justify-center lg:h-screen lg:my-0 */}
       {loading === false ? (
-        <section className="w-[95%] sm:w-[90%] 2xl:w-[1320px] mx-auto h-full mb-20 mt-12 flex items-center justify-center lg:h-screen lg:my-0">
+        
+        <section className="container h-full mb-20 mt-12 flex items-center justify-center lg:h-screen lg:my-0">
           <div className="w-full flex flex-wrap justify-between">
             <div className="w-full pb-5 border-2 border-dashed flex flex-col justify-between items-center border-subColor my-5 order-1 lg:my-0 lg:w-[58%]">
               <div className=" bg-mainBgColor color-mainColor p-6 rounded-tr-md rounded-tl-md h-full">

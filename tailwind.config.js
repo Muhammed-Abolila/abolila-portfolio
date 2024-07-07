@@ -4,7 +4,16 @@ export default {
   theme: {
     extend: {
       container: {
-        width: "1320px",
+        center: true,
+        screens: {
+          DEFAULT: '95%',
+          sm: '90%',
+          '2xl': '1320px',
+        },
+        padding:{
+          DEFAULT:"20px",
+          md:"0px"
+        }
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],

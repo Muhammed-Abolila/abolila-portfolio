@@ -26,3 +26,15 @@
     font-size:1.1rem
   }
 }
+@media (min-width: 768px) {
+  .border-style:nth-child(3) {
+    @apply border-b-0;
+    @apply border-l-0;
+  }
+}
+@media (min-width: 1024px) {
+  .border-style:nth-child(3) {
+    @apply border-l;
+  }
+}
+
