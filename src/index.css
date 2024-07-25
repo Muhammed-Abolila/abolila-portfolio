@@ -37,4 +37,8 @@
     @apply border-l;
   }
 }
+.experience-image{
+  background-image: url("/src/assets/img/profile/3.jpg");
+}
+
 

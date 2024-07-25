@@ -1,38 +1,6 @@
 // Start Experiences Section
 .experiences {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .experiences-content {
-    .image {
-      background-image: url("../assets/img/profile/3.jpg");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-      height: 100%;
-      border: 1px solid var(--borderColor);
-      border-radius: 10px 0px 0px 10px;
-      overflow: hidden;
-      a {
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        right: 0;
-        background-color: var(--secondBgColor);
-        color: var(--borderColor);
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 7px;
-        text-decoration: none; 
-        transition:all .4s ease-in-out;
-        &:hover{
-          background-color: var(--borderColor);
-        color: var(--secondBgColor);
-        }   
-      }
-    }
+
     .slick-slider {
       height: 100%;
       display: flex;
