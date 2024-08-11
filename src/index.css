@@ -37,8 +37,12 @@
     @apply border-l;
   }
 }
-.experience-image{
+.experience-container .experience-image{
   background-image: url("/src/assets/img/profile/3.jpg");
 }
-
-
+.experience-container .slick-slider .slick-arrow{
+  display: none !important;
+}
+.experience-container .slick-slider .slick-dots{
+  display: none !important;
+}
