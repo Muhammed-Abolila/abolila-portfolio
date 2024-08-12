@@ -40,6 +40,14 @@
 .experience-container .experience-image{
   background-image: url("/src/assets/img/profile/3.jpg");
 }
+  .experience-container .slick-slider .slick-list,
+  .experience-container .slick-slider .slick-list .slick-track,
+  .experience-container .slick-slider .slick-list .slick-track .slick-slide,
+  .experience-container .slick-slider .slick-list .slick-track .slick-slide>div{
+    height: 100%;
+  }
+
+
 .experience-container .slick-slider .slick-arrow{
   display: none !important;
 }
