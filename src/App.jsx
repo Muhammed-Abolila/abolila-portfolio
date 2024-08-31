@@ -16,7 +16,7 @@ function App() {
   });
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
       <TopNavbar loading={loading}/>
         <Routes>
           <Route path="/" element={<HomePage loading={loading}/>}/>
@@ -29,7 +29,7 @@ function App() {
           <Route path="/experiences" element={<ExperiencesPage loading={loading}/>} />
         </Routes>
         <BottomNavbar loading={loading} setLoading={setLoading} />
-      </HashRouter>
+      </BrowserRouter>
       
     </>
   );

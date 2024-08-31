@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 @media screen and (max-width: 450px) {
   .social-links {
@@ -16,14 +16,14 @@
   }
 }
 @media screen and (max-width: 380px) {
-   .home-content .home-caption {
+  .home-content .home-caption {
     padding-bottom: 0;
   }
-  .home-content .home-caption .caption-top span{
+  .home-content .home-caption .caption-top span {
     font-size: 1.1rem;
   }
-  .home-content .home-caption .caption-top h1{
-    font-size:1.1rem
+  .home-content .home-caption .caption-top h1 {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 768px) {
@@ -37,20 +37,49 @@
     @apply border-l;
   }
 }
-.experience-container .experience-image{
+.experience-container .experience-image {
   background-image: url("/src/assets/img/profile/3.jpg");
 }
+@media screen and (min-width: 1024px) {
   .experience-container .slick-slider .slick-list,
   .experience-container .slick-slider .slick-list .slick-track,
   .experience-container .slick-slider .slick-list .slick-track .slick-slide,
-  .experience-container .slick-slider .slick-list .slick-track .slick-slide>div{
+  .experience-container
+    .slick-slider
+    .slick-list
+    .slick-track
+    .slick-slide
+    > div {
     height: 100%;
   }
+}
 
-
-.experience-container .slick-slider .slick-arrow{
+.experience-container .slick-slider .slick-arrow,
+.portfolio .slick-slider .slick-arrow {
   display: none !important;
 }
-.experience-container .slick-slider .slick-dots{
+.experience-container .slick-slider .slick-dots {
   display: none !important;
+}
+.portfolio .portfolio-content .social-links-container .social-links {
+  gap: 10px;
+}
+.portfolio .slick-slider .slick-dots {
+  bottom: -100px;
+}
+.portfolio .slick-slider .slick-dots li button:before {
+  font-size: 15px;
+  color: #09c;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .slick-slider .slick-slide > div {
+  height: 255px;
+}
+@media screen and (max-width:1023px){
+  .portfolio .slick-slider .slick-slide > div {
+    height: 400px;
+  }
+  .portfolio .slick-slider .slick-dots {
+    bottom: 0;
+  }
 }

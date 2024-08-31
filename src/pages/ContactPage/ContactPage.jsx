@@ -4,13 +4,11 @@ import Loading from "../../components/utilities/Loading/Loading";
 const ContactPage = ({ loading }) => {
   return (
     <>
-     {/* w-[95%] sm:w-[90%] 2xl:w-[1320px] mx-auto h-full mb-20 mt-12 flex items-center justify-center lg:h-screen lg:my-0 */}
       {loading === false ? (
-        
-        <section className="container h-full mb-20 mt-12 flex items-center justify-center lg:h-screen lg:my-0">
+        <section className="container h-screen flex items-center justify-center lg:my-0">
           <div className="w-full flex flex-wrap justify-between">
             <div className="w-full pb-5 border-2 border-dashed flex flex-col justify-between items-center border-subColor my-5 order-1 lg:my-0 lg:w-[58%]">
-              <div className=" bg-mainBgColor color-mainColor p-6 rounded-tr-md rounded-tl-md h-full">
+              <div className="  bg-mainBgColor color-mainColor mb-10 p-6 pb-9 rounded-tr-md rounded-tl-md h-full">
                 <h2 className="text-[2rem] font-bold uppercase">
                   get in touch
                 </h2>
@@ -23,13 +21,14 @@ const ContactPage = ({ loading }) => {
                   today and experience the real difference we can make.
                 </p>
                 <p className="pl-3 mb-3 text-[14px] text-grayColor">
-                  We are committed to ensuring your satisfaction, achieving
-                  real value, and providing exceptional solutions for your
+                  We are committed to ensuring your satisfaction, achieving real
+                  value, and providing exceptional solutions for your
                   experience.
                 </p>
               </div>
               <SocialLinks />
             </div>
+
             <form className="w-full flex flex-col items-stretch justify-between gap-2 text-sm order-2 lg:w-2/5 lg:px-3">
               <input
                 className="py-2 px-1 rounded border-b-2 border-white  transition-[border] duration-500 ease-in-out focus:outline-none focus:border-subColor placeholder:text-grayColor placeholder:uppercase"
@@ -50,7 +49,9 @@ const ContactPage = ({ loading }) => {
                 className="py-2 px-1 rounded min-h-36 max-h-36 border-b-2 border-white transition-[border] duration-500 ease-in-out focus:border-subColor focus:outline-none placeholder:text-grayColor placeholder:uppercase"
                 placeholder="Your message"
               ></textarea>
-              <button className="border border-subColor text-mainColor bg-mainBgColor w-fit py-1 px-3 rounded hover:bg-subColor hover:text-mainBgColor transition-all duration-500 ease-in-out">send</button>
+              <button className="text-[18px] border border-subColor text-mainColor bg-mainBgColor min-w-32 w-fit  py-2 rounded hover:bg-subColor hover:text-mainBgColor transition-all duration-500 ease-in-out">
+                send
+              </button>
             </form>
           </div>
         </section>
