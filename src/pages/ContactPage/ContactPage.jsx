@@ -5,22 +5,22 @@ const ContactPage = ({ loading }) => {
   return (
     <>
       {loading === false ? (
-        <section className="container h-screen flex items-center justify-center lg:my-0">
+        <section className="container h-full mb-20 mt-12 flex items-center justify-center md:h-screen md:my-0">
           <div className="w-full flex flex-wrap justify-between">
             <div className="w-full pb-5 border-2 border-dashed flex flex-col justify-between items-center border-subColor my-5 order-1 lg:my-0 lg:w-[58%]">
-              <div className="  bg-mainBgColor color-mainColor mb-10 p-6 pb-9 rounded-tr-md rounded-tl-md h-full">
+              <div className="  bg-mainBgColor color-mainColor p-6 pb-9 rounded-tr-md rounded-tl-md h-full">
                 <h2 className="text-[2rem] font-bold uppercase">
                   get in touch
                 </h2>
                 <h2 className="text-[2rem] font-bold mb-3 uppercase">
                   get real
                 </h2>
-                <p className="pl-3 mb-3 text-[14px] text-grayColor">
+                <p className="pl-3 mb-3 md:text-xl lg:text-[16px] text-grayColor">
                   Whether you're looking for answers, need help, or want to
                   explore our services further, we're here to help. Contact us
                   today and experience the real difference we can make.
                 </p>
-                <p className="pl-3 mb-3 text-[14px] text-grayColor">
+                <p className="pl-3 mb-3 md:text-xl lg:text-[16px] text-grayColor">
                   We are committed to ensuring your satisfaction, achieving real
                   value, and providing exceptional solutions for your
                   experience.
